@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flying Leaves</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	 <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
+</head>
+<body>
+	<style>
+		 body
+		{
+			margin: 0px;
+			padding:0px;
+			 
+		}
+		section
+		{
+			 
+			height: 100%;
+
+		}
+		.set
+		{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+
+		}
+		.set div
+		{
+			position: absolute;
+			display: block;
+		}
+		 
+		.set div:nth-child(1)
+		{
+			left: 20%;
+			animation: animate 15s linear infinite;
+			animation-delay: -7s;
+		}
+		.set div:nth-child(2)
+		{
+			left: 60%;
+			animation: animate 20s linear infinite;
+			animation-delay: -5s;
+		}
+		.set div:nth-child(3)
+		{
+			left: 90%;
+			animation: animate 25s linear infinite;
+		
+		}
+		.set div:nth-child(4)
+		{
+			left: 0%;
+			animation: animate 15s linear infinite;
+			animation-delay: -3s;
+		}
+		.set div:nth-child(5)
+		{
+			left: 40%;
+			animation: animate 18s linear infinite;
+			animation-delay: -8s;
+		}
+		.set div:nth-child(6)
+		{
+			left: 75%;
+			animation: animate 12s linear infinite;
+			animation-delay: -5s;
+		}
+		.set div:nth-child(7)
+		{
+			left: 30%;
+			animation: animate 14s linear infinite;
+			
+		}
+		.set div:nth-child(8)
+		{
+			left: 50%;
+			animation: animate 15s linear infinite;
+			animation-delay: -3s;
+		} 
+	 
+	 
+	@keyframes animate
+	{
+		0%
+		{
+			top: -10%;
+			opacity: 0;
+			transform: translateX(20px) rotate(0deg);
+		}
+		10%
+		{
+			opacity: 1;
+		}
+		20%
+		{
+			transform: translateX(-20px) rotate(45deg);
+		}
+		40%
+		{
+			transform: translateX(-20px) rotate(90deg);
+		}
+		60%
+		{
+			transform: translateX(20px) rotate(135deg);
+		}
+		80%
+		{
+			transform: translateX(-20px) rotate(180deg);
+		}
+		100%
+		{
+			top: 110%;
+			transform: translateX(-20px) rotate(225deg);
+		}
+	}
+ 
+	</style>
+
+
+<section>
+ 
+ 
+	<div class="set">
+		<div><img src="01.png" height="100px" width="100px"></div>
+		<div><img src="02.png" height="130px" width="130px"></div>
+		<div><img src="03.png" height="90px" width="90px"></div>
+		<div><img src="04.png" height="150px" width="150px"></div>
+		<div><img src="01.png" height="100px" width="100px"></div>
+		<div><img src="02.png" height="80px" width="80px"></div>
+		<div><img src="03.png" height="60px" width="60px"></div>
+		<div><img src="04.png" height="120px" width="120px"></div>
+		
+	</div>
+</section>
+</body>
+</html>
